@@ -4,13 +4,14 @@
     gap: 20px;
     font-size: 26px;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0 20px;
     background-color: #99CBE2;
+    align-items: center;
   }
 
   @media (min-width: 768px) {
     .header {
-      padding: 44px 67px;
+      padding: 20px 67px 40px 67px;
     }
 }
 
@@ -23,7 +24,7 @@
   }
 
   .navigation {
-    align-self: start;
+    align-self: auto;
     display: flex;
     margin-top: 12px;
     gap: 10px;

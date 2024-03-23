@@ -1,8 +1,15 @@
 body, html {
   max-width: 100%;
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .container {
-  margin: auto; /* centers the container */
+  margin: auto; 
+  width: 100%; 
 }

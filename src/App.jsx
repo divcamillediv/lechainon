@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Login from './pages/home/login';
+import Footer from './components/footer/footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
       </Routes>
+      <Footer />
     </Router>
+    
 );
 
 }
