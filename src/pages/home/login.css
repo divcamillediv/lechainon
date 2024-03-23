@@ -1,0 +1,108 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 189px;
+  }
+
+  @media (max-width: 991px) {
+    .login-page {
+      margin-top: 40px;
+    }
+  }
+
+  .login-form {
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #4a7db4;
+    display: flex;
+    width: 360px;
+    max-width: 100%;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 37px 30px 18px;
+  }
+
+  @media (max-width: 991px) {
+    .login-form {
+      padding-left: 20px;
+    }
+  }
+
+  .login-title {
+    font: 40px Inter, sans-serif;
+  }
+
+  .username-label {
+    font-family: Inter, sans-serif;
+    margin-top: 44px;
+  }
+
+  @media (max-width: 991px) {
+    .username-label {
+      margin-top: 40px;
+    }
+  }
+
+  .username-input {
+    border-radius: 10px;
+    background: linear-gradient(0deg, #fff 0%, #fff 100%), #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-color: rgba(42, 102, 167, 1);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 11px;
+    height: 39px;
+    padding: 0 10px;
+    font-size: 18px;
+  }
+
+  .password-label {
+    font-family: Inter, sans-serif;
+    margin-top: 22px;
+  }
+
+  .password-input {
+    border-radius: 10px;
+    background: linear-gradient(0deg, #fff 0%, #fff 100%), #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-color: rgba(42, 102, 167, 1);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 11px;
+    height: 39px;
+    padding: 0 10px;
+    font-size: 18px;
+  }
+
+  .sign-in-button {
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #4a7db4;
+    align-self: end;
+    margin-top: 23px;
+    color: #fff;
+    justify-content: center;
+    padding: 9px 29px;
+    font: 15px Martel Sans, sans-serif;
+    cursor: pointer;
+  }
+
+  .sign-in-button :hover {
+    color: #99CBE2;
+  }
+
+  @media (max-width: 991px) {
+    .sign-in-button {
+      padding: 0 20px;
+    }
+  }
+
+  .forgot-password {
+    align-self: center;
+    margin-top: 15px;
+    font: 15px Inter, sans-serif;
+    cursor: pointer;
+  }

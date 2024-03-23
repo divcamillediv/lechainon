@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 26px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #99CBE2;
+  }
+
+  @media (min-width: 768px) {
+    .header {
+      padding: 44px 67px;
+    }
+}
+
+  .logo {
+    aspect-ratio: 9.09;
+    object-fit: auto;
+    object-position: center;
+    max-width: 330px;
+    height: auto;
+  }
+
+  .navigation {
+    align-self: start;
+    display: flex;
+    margin-top: 12px;
+    gap: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .header, .navigation {
+      gap: 20px;
+    }
+  }
+
+  .nav-link {
+    font-family: Inter, sans-serif;
+  }
