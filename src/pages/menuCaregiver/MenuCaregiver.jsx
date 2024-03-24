@@ -37,7 +37,7 @@ function MenuCaregiver() {
                 {/*<p>test</p>*/}
                 <div className="card m-2 ">
                     <div className="card-body">
-                        <img class="card-img-top-cover" src="src/pages/menuCaregiver/img/marie-ange.jpg" alt="Card image cap"/>
+                        <img class="card-img-top-cover card-img-top-1" src="src/pages/menuCaregiver/img/marie-ange.jpg" alt="Card image cap"/>
                       <h5 className="card-title text-center">Marie-Ange Laurent</h5>
                       <a href="#" class="btn btn-primary d-flex justify-content-center">View Profile</a>
                     </div>
@@ -47,7 +47,7 @@ function MenuCaregiver() {
                 {/*<p>test</p>*/}
                 <div className="card m-2 ">
             <div className="card-body">
-                <img class="card-img-top-cover" src="src/pages/menuCaregiver/img/robine.jpg" alt="Card image cap"/>
+                <img class="card-img-top-cover card-img-top-1" src="src/pages/menuCaregiver/img/robine.jpg" alt="Card image cap"/>
               <h5 className="card-title text-center">Robine Mercy</h5>
               <a href="#" class="btn btn-primary d-flex justify-content-center">View Profile</a>
             </div>
@@ -60,7 +60,7 @@ function MenuCaregiver() {
                 {/* Add a user */}
                 <div className="card m-2 ">
                     <div className="card-body">
-                        <img class="card-img-top" src="src/pages/menuCaregiver/img/adduser.svg" alt="Card image cap"/>
+                        <img class="card-img-top card-img-top-1" src="src/pages/menuCaregiver/img/adduser.svg" alt="Card image cap"/>
                         
                         <a href="#" class="btn btn-primary text-center d-flex justify-content-center">Add a resident</a>
                     </div>
