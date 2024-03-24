@@ -9,6 +9,9 @@ import InterventionPlanPageResident from './pages/menuResident/interventionplanR
 import Footer from './components/footer/footer';
 import MenuCaregiver from './pages/menuCaregiver/MenuCaregiver';
 import ProfileResidentCaregiver from './pages/menuCaregiver/personalFileExample';
+import AddProfileResidentCaregiver from './pages/menuCaregiver/addPlan';
+
+
 
 function App() {
     return (
@@ -22,6 +25,7 @@ function App() {
         <Route path="/intervention-plan" element={<InterventionPlanPageResident />} />
         <Route path="/homecaregiver" element={<MenuCaregiver />} />
         <Route path="/profile" element={<ProfileResidentCaregiver />} />
+        <Route path="/addprofile" element={<AddProfileResidentCaregiver />} />
       </Routes>
       <Footer />
     </Router>

@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom"; // idea from "https://stackoverf
 import HeaderCaregiver from '../../components/header/headerCaregiver';
 
 
-
   function MenuCaregiver() {
     const navigate = useNavigate();
     const handleProfileClick = () => navigate("/profile", { replace: true });
@@ -18,6 +17,14 @@ import HeaderCaregiver from '../../components/header/headerCaregiver';
 
   };
 
+  const handleAddProfileClick = () => navigate("/addprofile", { replace: true });
+
+  const handleAddProClick = (e) => {
+   e.preventDefault();
+
+    handleAddProClick();
+
+};
   return (
     <>
     {/* can try 20 - 80 - 20 */}
@@ -72,7 +79,7 @@ import HeaderCaregiver from '../../components/header/headerCaregiver';
           
             <div className="col-lg-6">
                 {/* Add a user */}
-                <div className="card m-2 ">
+                <div onClick={handleAddProfileClick} className="card m-2 ">
                     <div className="card-body">
                         <img class="card-img-top card-img-top-1" src="src/pages/menuCaregiver/img/adduser.svg" alt="Card image cap"/>
                         
