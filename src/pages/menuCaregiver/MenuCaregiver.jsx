@@ -1,104 +1,45 @@
-import React from "react";
-// import HeaderCaregiver from "../../components/header/headerCaregiver";
-//import './pages/home/login.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import HeaderResident from '../../components/header/headerResident';
 import './menuCaregiver.css';
-import LeftNavbar from "../../components/navbar-left/navbarleft";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavDropdown } from "react-bootstrap";
 
-
-function MenuCaregiver() {
-    return(
+function Layout() {
+  return (
     <>
-                <Container fluid>
-                  <Row>
-                    <Col xs={2} id="sidebar-wrapper">      
-                      <LeftNavbar />
-                    </Col>
-                    <Col xs={10} id="page-content-wrapper">
-                      
-                    
-                
-                {/* Jumbotron section */}
-                <div className="jumbotron jumbotron-fluid">
-                  <div className="container">
-                  <h1 className="display-4">Welcome to Your Caregiver Portal <br /><span className="smaller-text">Sylvie Benoit</span></h1>
-                    <p className="lead"></p>
-                  </div>
-                </div>
-                {/* Toggle left menu */}
-          
-                {/* Cards section */}
-                <div className="container mt-5">
-                  <div className="row">
-                 
-                    <div className="col-md-6 mb-4">
-                        <Link className="link-text" to="/chat">
-                        <div className="card card-hover">
-                            <img src="src/pages/menuResident/img/Designer-7.png" className="card-img-top" alt="Card Image" />
-                            <div className="card-body">
-                                <h5 className="card-title">Chat</h5>
-                                <p className="card-text">Chat with your caregiver</p>
-                                <Link to="/chat" className="btn btn-primary">Go to Chat</Link>
-                            </div>
-                        </div>
-                        </Link>
-                    </div>
-                    
-        
-                    <div className="col-md-6 mb-4">
-                        <Link className="link-text" to="/calendar">
-                        <div className="card card-hover">
-                            <img src="src/pages/menuResident/img/Designer-8.png" className="card-img-top" alt="Card Image" />
-                            <div className="card-body">
-                                <h5 className="card-title">Calendar</h5>
-                                <p className="card-text">Don't miss any appointments with your personalised calendar</p>
-                                <Link to="/calendar" className="btn btn-primary">Go to Calendar</Link>
-                            </div>
-                        </div>
-                        </Link>
-                    </div>
-        
-                  </div>
-        
-        
-                  <div className="row">
-                    {/* Cards section */}
-                            <div className="col-md-6 mb-4">
-                                <Link className="link-text" to="/interventionplan>">
-                                    <div className="card card-hover">
-                                        <img src="src/pages/menuResident/img/Designer-10.png" className="card-img-top" alt="Card Image" />
-                                        <div className="card-body">
-                                            <h5 className="card-title">Intervention Plan</h5>
-                                            <p className="card-text">See your Personalised Intervention Plan</p>
-                                            <Link to="/interventionplan" className="btn btn-primary">Go to Intervention Plan</Link>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-        
-                            <div className="col-md-6 mb-4">
-                                <Link className="link-text" to="/emergency">
-                                    <div className="card card-hover">
-                                        <img src="src/pages/menuResident/img/Designer-9.png" className="card-img-top" alt="Card Image" />
-                                        <div className="card-body">
-                                            <h5 className="card-title">Emergency</h5>
-                                            <p className="card-text">Don't panic! We'll help you!</p>
-                                            <Link to="/chat" className="btn btn-primary">Go to Emergency Section</Link>
-                                        </div>
-                                    </div>
-                                </Link>
-        
-                             </div>
-                    </div>
-        
-                </div>
-                    </Col>
-                  </Row>
-                </Container>
-              </>
-              );
+    {/* can try 20 - 80 - 20 */}
+    <HeaderResident/>
+    <div className="container-fluid">
+      <div className="row">
+        {/* Left Menu (25% width) */}
+        <div className="col-lg-3">
+          <div className="left-menu">
+            <h3>Menu</h3>
+            <div className="menu-items">
+              <Link to="/" className="btn btn-primary">Home</Link>
+              <Link to="/residents" className="btn btn-primary">Your Residents</Link>
+              <Link to="/calendar_caregiver" className="btn btn-primary">Your Calendar</Link>
+              <Link to="/surveys" className="btn btn-primary">Surveys & Statistics</Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Content (50% width) */}
+        <div className="col-lg-6">
+          <div className="main-content">
+            <h1>My Residents</h1>
+          </div>
+        </div>
+
+        {/* Right Sidebar (25% width) */}
+        <div className="col-lg-3">
+          <div className="right-sidebar">
+            <h3>Chat</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    </>
+  );
 }
 
-export default MenuCaregiver;
+export default Layout;
