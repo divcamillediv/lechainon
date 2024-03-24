@@ -20,7 +20,7 @@ function PersonalInfo({ firstName, lastName, age, housingStatus, startOfPlan, en
   );
 }
 
-function Objective({ number, title, description }) {
+function Objective({ number, title, description, term, status, means, healthDeterminant }) {
   return (
     
 <p class="addspace">
@@ -28,8 +28,13 @@ function Objective({ number, title, description }) {
     <Card className="objective-card">
    
       <Card.Body>
-        <div className="objective-title">Objective #{number}</div>
-        <div className="objective-description">{title}</div>
+        <div className="objective-number">Objective #{number}</div>
+        <div className="objective-title">{title}</div>
+        <div className="objective-description">{description}</div>
+        <div className="objective-term">Term: {term}</div>
+        <div className="objective-status">Status: {status}</div>
+        <div className="objective-means">Means: {means}</div>
+        <div className="objective-health-determinant">Health determinant: {healthDeterminant}</div>
       </Card.Body>
     </Card>
 
@@ -98,15 +103,31 @@ function PersonalFileExample() {
 
   const objectives = [
     {
-      number: 1,
-      title: "Improving Consumption Habit",
-      description: "Maintain a routine of consumption by using the appropriate services: transition to use only the prescribed medication (methadone, dilaudid)",
+        number: 1,
+        title: "Improving Consumption Habit",
+        description: "Maintain a routine of consumption by using the appropriate services: transition to use only the prescribed medication (methadone, dilaudid)",
+        term: "Short-term",
+        status: "In progress",
+        means: "Use addiction services and follow established routines (average 4 injections per day)",
+        healthDeterminant: "Physical & Mental health",
     },
     {
-      number: 2,
-      title: "Maintain medical follow-up with treating teams",
-      description: "",
+        number: 2,
+        title: "Maintain medical follow-up with treating teams",
+        description: "",
+        term: "Short-term",
+        status: "Coming soon",
+        means: "Keep your appointments and ask for support",
+        healthDeterminant: "Physical health",
     },
+    {
+        number: 3,
+        title: "Maintaining a healthy living environment",
+        description: "In particular, the bedroom",
+        term: "Short-term",
+        status: "Completed",
+        healthDeterminant: "Global health",
+    }
   ];
 
   const notes = [
