@@ -54,13 +54,13 @@ function MenuResident() {
           <div className="row">
             {/* Cards section */}
                     <div className="col-md-6 mb-4">
-                        <Link className="link-text" to="/interventionplan>">
+                        <Link className="link-text" to="/intervention-plan">
                             <div className="card card-hover">
                                 <img src="src/pages/menuResident/img/Designer-10.png" className="card-img-top" alt="Card Image" />
                                 <div className="card-body">
                                     <h5 className="card-title">Intervention Plan</h5>
                                     <p className="card-text">See your Personalised Intervention Plan</p>
-                                    <Link to="/interventionplan" className="btn btn-primary">Go to Intervention Plan</Link>
+                                    <Link to="/intervention-plan" className="btn btn-primary">Go to Intervention Plan</Link>
                                 </div>
                             </div>
                         </Link>
@@ -73,7 +73,7 @@ function MenuResident() {
                                 <div className="card-body">
                                     <h5 className="card-title">Emergency</h5>
                                     <p className="card-text">Don't panic! We'll help you!</p>
-                                    <Link to="/chat" className="btn btn-primary">Go to Emergency Section</Link>
+                                    <Link to="/emergency" className="btn btn-primary">Go to Emergency Section</Link>
                                 </div>
                             </div>
                         </Link>
