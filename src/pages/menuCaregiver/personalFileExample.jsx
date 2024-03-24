@@ -100,7 +100,7 @@ function PersonalFileExample() {
     {
       number: 1,
       title: "Improving Consumption Habit",
-      description: "",
+      description: "Maintain a routine of consumption by using the appropriate services: transition to use only the prescribed medication (methadone, dilaudid)",
     },
     {
       number: 2,

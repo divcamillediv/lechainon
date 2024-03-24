@@ -12,7 +12,6 @@ import ProfileResidentCaregiver from './pages/menuCaregiver/personalFileExample'
 import AddProfileResidentCaregiver from './pages/menuCaregiver/addPlan';
 
 
-
 function App() {
     return (
         <Router>
