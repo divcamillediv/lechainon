@@ -1,5 +1,7 @@
 import React from "react";
 import HeaderCaregiver from "../../components/header/headerCaregiver";
+import { Card, Button } from "react-bootstrap";
+import "./personalFileExample.css";
 
 function PersonalInfo({ firstName, lastName, age, housingStatus, startOfPlan, endOfPlan, immigrationStatus, issues }) {
   return (
@@ -20,48 +22,61 @@ function PersonalInfo({ firstName, lastName, age, housingStatus, startOfPlan, en
 
 function Objective({ number, title, description }) {
   return (
-    <div className="objective">
-      <div className="objective-title">Objective #{number}</div>
-      <div className="objective-description">{title}</div>
-      <div className="objective-button" />
-    </div>
+    
+<p class="addspace">
+
+    <Card className="objective-card">
+   
+      <Card.Body>
+        <div className="objective-title">Objective #{number}</div>
+        <div className="objective-description">{title}</div>
+      </Card.Body>
+    </Card>
+
+    </p>
   );
 }
 
 function ProfileSection({ imageUrl, name }) {
   return (
-    <div className="profile-section">
-      <div className="profile-header">
-        <img loading="lazy" src={imageUrl} alt={`${name}'s profile`} className="profile-image" />
-        <div className="profile-name">{name}</div>
-      </div>
-      <button className="profile-button">Edit Personal Information</button>
-      <button className="profile-button">Add Goal</button>
-      <button className="profile-button">Send Message</button>
-      <button className="profile-button">Add Note</button>
-    </div>
+    <Card className="profile-section">
+      <Card.Header>
+        <Card.Img variant="top" src={imageUrl} alt={`${name}'s profile`} className="profile-image" />
+        <Card.Title className="profile-name">{name}</Card.Title>
+      </Card.Header>
+      <Card.Body className="profile-button-group">
+  <Button className="button profile-button">Edit Personal Information</Button>
+  <p class="space"></p>
+  <Button className="button profile-button">Add Goal</Button>
+  <p class="space"></p>
+  <Button className="button profile-button">Send Message</Button>
+  <p class="space"></p>
+  <Button className="button profile-button">Add Note</Button>
+</Card.Body>
+
+    </Card>
   );
 }
 
 function NoteItem({ date, motive, content }) {
   return (
-    <div className="note-item">
-      <div className="note-header">
+    <Card className="note-item">
+      <Card.Header>
         <div className="note-info">Date: {date}</div>
         <div className="note-info">Motive: {motive}</div>
-      </div>
-      <div className="note-content">{content}</div>
-    </div>
+      </Card.Header>
+      <Card.Body>
+        <div className="note-content">{content}</div>
+      </Card.Body>
+    </Card>
   );
 }
 
 function NotesSection({ notes }) {
   return (
     <div className="notes-section">
-      <div className="notes-header">
-        <div className="notes-title">Notes</div>
-        <div className="notes-recent">Most recent</div>
-      </div>
+      <h3 className="notes-title">Notes</h3>
+      <div className="notes-recent">Most recent</div>
       {notes.map((note, index) => (
         <NoteItem key={index} date={note.date} motive={note.motive} content={note.content} />
       ))}
@@ -105,25 +120,30 @@ function PersonalFileExample() {
 
   return (
     <>
+      <HeaderCaregiver />
       <div className="container">
-        <HeaderCaregiver />
-        <main className="main-content">
-          <div className="content-wrapper">
+        <div className="row">
+          <div className="left col-md-8">
             <section className="overview-section">
-              <div className="overview-container">
-                <h1 className="overview-title">Intervention Plan Overview</h1>
-                <PersonalInfo {...personalInfo} />
-                {objectives.map((objective, index) => (
-                  <Objective key={index} {...objective} />
-                ))}
-              </div>
+              <h1 className="overview-title">Intervention Plan Overview</h1>
+              <PersonalInfo {...personalInfo} />
+              <p class="addspace"></p>
+              {objectives.map((objective, index) => (
+               
+                <Objective className="addspace" key={index} {...objective} />
+
+              ))}
             </section>
+          </div>
+          
+          <div className="right col-md-4">
             <aside className="profile-notes-section">
               <ProfileSection imageUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/777bb5501297a3a3cc7407a59331e3f557d10bd4ea904e5de641db1dbcc1e12e?apiKey=78b3824f9340487c994130168bf8c43f&" name="Marie-Ange Laurent" />
+              <p className="addspace"></p>
               <NotesSection notes={notes} />
             </aside>
           </div>
-        </main>
+        </div>
       </div>
     </>
   );

@@ -1,13 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HeaderResident from '../../components/header/headerResident';
-import './menuCaregiver.css';
 
-function MenuCaregiver() {
+import './menuCaregiver.css';
+import { useNavigate } from "react-router-dom"; // idea from "https://stackoverflow.com/questions/71721691/how-do-you-go-to-another-page-on-button-click-in-react"
+import HeaderCaregiver from '../../components/header/headerCaregiver';
+
+
+
+  function MenuCaregiver() {
+    const navigate = useNavigate();
+    const handleProfileClick = () => navigate("/profile", { replace: true });
+
+    const handleClick = (e) => {
+     e.preventDefault();
+
+      handleProfileClick();
+
+  };
+
   return (
     <>
     {/* can try 20 - 80 - 20 */}
-    <HeaderResident/>
+    <HeaderCaregiver/>
     <div className="container-fluid">
       <div className="row">
         {/* Left Menu (25% width) */}
@@ -35,7 +49,7 @@ function MenuCaregiver() {
           
             <div className="col-lg-6">
                 {/*<p>test</p>*/}
-                <div className="card m-2 ">
+                <div onClick={handleClick} className="card m-2 ">
                     <div className="card-body">
                         <img class="card-img-top-cover card-img-top-1" src="src/pages/menuCaregiver/img/marie-ange.jpg" alt="Card image cap"/>
                       <h5 className="card-title text-center">Marie-Ange Laurent</h5>

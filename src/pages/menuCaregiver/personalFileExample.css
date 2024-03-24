@@ -1,0 +1,29 @@
+.left{
+    padding:30px;
+}
+.right{
+    padding:30px;
+}
+
+.button{
+padding:15px;
+}
+
+.profile-button {
+    margin-right: 10px; 
+  }
+
+  .profile-button-group {
+    display: flex;
+    flex-direction:column;
+   
+  }
+  
+
+  .profile-button-group {
+    justify-content: center;
+  }
+  
+.addspace{
+    padding:10px;
+}
