@@ -8,6 +8,14 @@
     background-color: #99CBE2;
   }
 
+.navbar{
+  background-color: #99CBE2;
+}
+
+.nav-text{
+  color: black;
+}
+
   @media (min-width: 768px) {
     .header {
       padding: 44px 67px;

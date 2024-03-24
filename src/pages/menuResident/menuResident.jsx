@@ -1,14 +1,14 @@
 import React from 'react';
 //import './pages/home/login.css';
 import { Link } from 'react-router-dom';
-import HeaderLogin from '../../components/header/headerLogin';
+import HeaderResident from '../../components/header/headerResident';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './menuResident.css'; // Import your custom CSS file for styling
+import './menuResident.css';
 
 function MenuResident() {
     return (
       <>
-       <HeaderLogin />
+       <HeaderResident />
         {/* Jumbotron section */}
         <div className="jumbotron jumbotron-fluid">
           <div className="container">
