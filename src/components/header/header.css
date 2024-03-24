@@ -9,6 +9,14 @@
     align-items: center;
   }
 
+.navbar{
+  background-color: #99CBE2;
+}
+
+.nav-text{
+  color: black;
+}
+
   @media (min-width: 768px) {
     .header {
       padding: 20px 67px 40px 67px;

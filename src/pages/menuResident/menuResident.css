@@ -1,0 +1,41 @@
+.card-hover {
+    transition: transform 0.3s ease-in-out;
+    width:80%;
+    padding:20px;
+  }
+  
+  .card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-hover .card-body {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card-hover:hover .card-body {
+    background-color: #f8f9fa; 
+  }
+  
+  .jumbotron{
+    padding:20px;
+    background-color: rgb(242, 245, 250);
+  }
+
+  .smaller-text {
+    display: block; 
+    font-size: smaller;
+    padding:9px; 
+  }
+
+  .lead{
+    padding:9px; 
+  }
+
+  .btn-primary{
+    background-color:rgb(59, 93, 124);
+  }
+  
+.link-text{
+    text-decoration: none;
+}
