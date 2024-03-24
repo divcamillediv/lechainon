@@ -17,6 +17,7 @@ function HeaderResident() {
             <Link to="/chat" className="nav-link"><span class="nav-text">Chat</span></Link>
             <Link to="/calendar" className="nav-link"><span class="nav-text">Calendar</span></Link>
             <Link to="/intervention-plan" className="nav-link"><span class="nav-text">Intervention Plan</span></Link>
+            <Link to="/feedback" className="nav-link"><span class="nav-text">Feedback</span></Link>
             <Link to="/emergency" className="nav-link"><span class="nav-text">Emergency</span></Link>
           </Nav>
         </Navbar.Collapse>
