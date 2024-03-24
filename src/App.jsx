@@ -5,15 +5,15 @@ import MenuResident from './pages/menuResident/menuResident';
 import Footer from './components/footer/footer';
 
 function App() {
-  return (
-    <Router>
+    return (
+        <Router>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<MenuResident />} />
       </Routes>
       <Footer />
     </Router>
-  );
+    );
 }
 
 export default App;
