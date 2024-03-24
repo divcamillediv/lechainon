@@ -1,0 +1,89 @@
+.footer {
+    position : sticky;
+    background-color: #d9d9d9;
+    display: flex;
+    margin-top: 155px;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 25px 42px;
+  }
+  
+  @media (max-width: 991px) {
+    .footer {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+  
+  .contact-info {
+    margin: auto 0;
+    font: 16px Martel Sans, sans-serif;
+  }
+  
+  .newsletter-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .newsletter-text {
+    font: 16px Martel Sans, sans-serif;
+  }
+
+  .email-form {
+    border-radius: 8px;
+    border-color: rgba(217, 217, 217, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: #fff;
+    align-self: stretch;
+    display: flex;
+    margin-top: 15px;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 160%;
+  }
+
+  @media (max-width: 991px) {
+    .email-form {
+      white-space: initial;
+    }
+  }
+
+  .email-input {
+    font-family: Inter, sans-serif;
+    flex: 1;
+    border: none;
+    padding: 12px 16px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  .email-submit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .email-icon {
+    aspect-ratio: 1.1;
+    object-fit: auto;
+    object-position: center;
+    width: 23px;
+    margin: auto 0;
+  }
+  
+  .logo {
+    aspect-ratio: 9.09;
+    object-fit: auto;
+    object-position: center;
+    width: 300px;
+    margin-top: 35px;
+    max-width: 100%;
+  }
