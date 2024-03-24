@@ -19,7 +19,7 @@ function App() {
         <Route path="/chat" element={<ChatResident />} />
         <Route path="/feedback" element={<FeedbackResident />} />
         <Route path="/intervention-plan" element={<InterventionPlanPageResident />} />
-        <Route path="/home2" element={<MenuCaregiver />} />
+        <Route path="/homecaregiver" element={<MenuCaregiver />} />
       </Routes>
       <Footer />
     </Router>
