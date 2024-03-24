@@ -7,6 +7,7 @@ import FeedbackResident from './pages/menuResident/feedbackResident';
 import CalendarPageResident from './pages/menuResident/calendarResident';
 import InterventionPlanPageResident from './pages/menuResident/interventionplanResident';
 import Footer from './components/footer/footer';
+import MenuCaregiver from './pages/menuCaregiver/MenuCaregiver';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/chat" element={<ChatResident />} />
         <Route path="/feedback" element={<FeedbackResident />} />
         <Route path="/intervention-plan" element={<InterventionPlanPageResident />} />
+        <Route path="/home2" element={<MenuCaregiver />} />
       </Routes>
       <Footer />
     </Router>
