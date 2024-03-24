@@ -1,9 +1,18 @@
 import React from 'react';
 import './header.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 function HeaderResident() {
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+    const confirmed = window.confirm('Are you sure you want to sign out?');
+    if (confirmed) {
+      // if user confirms, navigate to the login page
+      navigate('/login');
+    }
+  };
   return (
     <Navbar class="navbar" expand="lg">
       <Container>
@@ -19,6 +28,7 @@ function HeaderResident() {
             <Link to="/intervention-plan" className="nav-link"><span class="nav-text">Intervention Plan</span></Link>
             <Link to="/feedback" className="nav-link"><span class="nav-text">Feedback</span></Link>
             <Link to="/emergency" className="nav-link"><span class="nav-text">Emergency</span></Link>
+            <button onClick={handleSignOut}>Sign Out</button>
           </Nav>
         </Navbar.Collapse>
       </Container>
