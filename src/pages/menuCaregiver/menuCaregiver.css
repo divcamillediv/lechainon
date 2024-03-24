@@ -1,0 +1,19 @@
+.left-menu {
+    background-color: #f0f0f0; 
+    padding: 20px;
+  }
+  
+  .menu-items .btn {
+    display: block;
+    margin-bottom: 10px; 
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .right-sidebar {
+    background-color: #f0f0f0; 
+    padding: 20px;
+  }
+  
