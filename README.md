@@ -28,10 +28,12 @@ This is a simple guide to run a React application that utilizes `react-router-do
 ## Running the App
 
 To run the app locally, use the following npm command:
-    ```
+
+        
     npm run dev
-    ```
-   This will run the app on your local host. Follow instructions displayed in your terminal.
+        
+    
+This will run the app on your local host. Follow instructions displayed in your terminal.
 
 
 
