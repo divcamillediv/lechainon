@@ -30,7 +30,6 @@ function HeaderCaregiver() {
             <Link to="/intervention-plan" className="nav-link"><span class="nav-text">Intervention Plan</span></Link>
             <Link to="/feedback" className="nav-link"><span class="nav-text">Feedback</span></Link>
             <Link to="/emergency" className="nav-link"><span class="nav-text">Emergency</span></Link>
-            <Link to="/emergency" className="nav-link"><span class="nav-text">Sign Out</span></Link>
             <button onClick={handleSignOut}>Sign Out</button>
           </Nav>
         </Navbar.Collapse>

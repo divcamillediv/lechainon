@@ -16,13 +16,13 @@ function HeaderResident() {
   return (
     <Navbar class="navbar" expand="lg">
       <Container>
-        <Navbar.Brand href="/homeResident">
+        <Navbar.Brand href="/home">
           <img src="src/assets/logo.png" alt="Company Logo" className="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto lead">
-            <Link to="/homeResident" className="nav-link"><span class="nav-text">Home</span></Link>
+            <Link to="/home" className="nav-link"><span class="nav-text">Home</span></Link>
             <Link to="/chat" className="nav-link"><span class="nav-text">Chat</span></Link>
             <Link to="/calendar" className="nav-link"><span class="nav-text">Calendar</span></Link>
             <Link to="/intervention-plan" className="nav-link"><span class="nav-text">Intervention Plan</span></Link>
