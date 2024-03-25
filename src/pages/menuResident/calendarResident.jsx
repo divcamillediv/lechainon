@@ -15,15 +15,10 @@ function CalendarPage() {
     <>
     <HeaderResident />
     <div className="container mt-5">
-      <h2>Calendar</h2>
-      <div className="row">
-        <div className="col-md-6">
-          <Calendar
-            onChange={onChange}
-            value={date}
-          />
-        </div>
-      </div>
+      <h2 className='moveleft'>Calendar</h2>
+     
+      <img className='moveleft moveleftleft' src="src/pages/menuResident/img/calendar.png"></img>
+      
     </div>
     </>
   );

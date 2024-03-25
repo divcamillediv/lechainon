@@ -38,3 +38,13 @@
 }
 
   
+
+.moveleft{
+  margin-left: 20px;
+  padding-left:-100px;
+  
+}
+
+.moveleftleft{
+  width: 90%;
+}

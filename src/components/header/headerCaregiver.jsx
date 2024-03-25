@@ -25,11 +25,9 @@ function HeaderCaregiver() {
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto lead">
             <Link to="/homecaregiver" className="nav-link"><span class="nav-text">Home</span></Link>
-            <Link to="/chat" className="nav-link"><span class="nav-text">Chat</span></Link>
-            <Link to="/calendar" className="nav-link"><span class="nav-text">Calendar</span></Link>
-            <Link to="/intervention-plan" className="nav-link"><span class="nav-text">Intervention Plan</span></Link>
-            <Link to="/feedback" className="nav-link"><span class="nav-text">Feedback</span></Link>
-            <Link to="/emergency" className="nav-link"><span class="nav-text">Emergency</span></Link>
+            <Link to="/chatcaregiver" className="nav-link"><span class="nav-text">Chat</span></Link>
+            <Link to="/calendarcaregiver" className="nav-link"><span class="nav-text">Calendar</span></Link>
+            <Link to="/feedbackcaregiver" className="nav-link"><span class="nav-text">Feedback</span></Link>
             <button onClick={handleSignOut}>Sign Out</button>
           </Nav>
         </Navbar.Collapse>

@@ -10,7 +10,10 @@ import Footer from './components/footer/footer';
 import MenuCaregiver from './pages/menuCaregiver/MenuCaregiver';
 import ProfileResidentCaregiver from './pages/menuCaregiver/personalFileExample';
 import AddProfileResidentCaregiver from './pages/menuCaregiver/addPlan';
-
+import Emergency from './pages/menuResident/emergency'
+import ChatCare from './pages/menuCaregiver/chatcaregiver';
+import CalendarCare from './pages/menuCaregiver/calendarcaregiver';
+import FeedbackCare from './pages/menuCaregiver/feedbackcare';
 
 function App() {
     return (
@@ -26,6 +29,10 @@ function App() {
         <Route path="/homecaregiver" element={<MenuCaregiver />} />
         <Route path="/profile" element={<ProfileResidentCaregiver />} />
         <Route path="/addprofile" element={<AddProfileResidentCaregiver />} />
+        <Route path="/emergency" element={<Emergency />} />
+        <Route path="/chatcaregiver" element={<ChatCare />} />
+        <Route path="/calendarcaregiver" element={<CalendarCare />} />
+        <Route path="/feedbackcaregiver" element={<FeedbackCare />} />
       </Routes>
       <Footer />
     </Router>
