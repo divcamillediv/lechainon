@@ -19,7 +19,7 @@ function HeaderCaregiver() {
         <Navbar class="navbar" expand="lg">
       <Container>
         <Navbar.Brand href="/">
-          <img src="src/assets/logo.png" alt="Company Logo" className="logo" />
+          <img src="logo.png" alt="Company Logo" className="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
