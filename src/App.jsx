@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'; 
 import Login from './pages/home/login';
 import MenuResidentResident from './pages/menuResident/menuResident';
 import ChatResident from './pages/menuResident/chatResident';
@@ -14,28 +14,29 @@ import Emergency from './pages/menuResident/emergency'
 import ChatCare from './pages/menuCaregiver/chatcaregiver';
 import CalendarCare from './pages/menuCaregiver/calendarcaregiver';
 import FeedbackCare from './pages/menuCaregiver/feedbackcare';
+import Layout from './Layout';
 
 function App() {
     return (
-        <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<MenuResidentResident />} />
-        <Route path="/calendar" element={<CalendarPageResident />} />
-        <Route path="/chat" element={<ChatResident />} />
-        <Route path="/feedback" element={<FeedbackResident />} />
-        <Route path="/intervention-plan" element={<InterventionPlanPageResident />} />
-        <Route path="/homecaregiver" element={<MenuCaregiver />} />
-        <Route path="/profile" element={<ProfileResidentCaregiver />} />
-        <Route path="/addprofile" element={<AddProfileResidentCaregiver />} />
-        <Route path="/emergency" element={<Emergency />} />
-        <Route path="/chatcaregiver" element={<ChatCare />} />
-        <Route path="/calendarcaregiver" element={<CalendarCare />} />
-        <Route path="/feedbackcaregiver" element={<FeedbackCare />} />
-      </Routes>
-      <Footer />
-    </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout />} >
+            <Route index element={<Login />} />
+            <Route path="/home" element={<MenuResidentResident />} />
+            <Route path="/calendar" element={<CalendarPageResident />} />
+            <Route path="/chat" element={<ChatResident />} />
+            <Route path="/feedback" element={<FeedbackResident />} />
+            <Route path="/intervention-plan" element={<InterventionPlanPageResident />} />
+            <Route path="/homecaregiver" element={<MenuCaregiver />} />
+            <Route path="/profile" element={<ProfileResidentCaregiver />} />
+            <Route path="/addprofile" element={<AddProfileResidentCaregiver />} />
+            <Route path="/emergency" element={<Emergency />} />
+            <Route path="/chatcaregiver" element={<ChatCare />} />
+            <Route path="/calendarcaregiver" element={<CalendarCare />} />
+            <Route path="/feedbackcaregiver" element={<FeedbackCare />} />
+          </Route>
+        </Routes>
+    </BrowserRouter>
     );
 }
 
